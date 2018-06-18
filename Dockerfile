@@ -9,10 +9,10 @@ USER trifecta
 
 WORKDIR /home/trifecta
 
-RUN wget $TRIFECTA_URL/trifecta_ui-$TRIFECTA_VERSION.zip && \
-	unzip trifecta_ui-$TRIFECTA_VERSION.zip  && \
-	rm trifecta_ui-$TRIFECTA_VERSION.zip && \
-	ln -s trifecta_ui-$TRIFECTA_VERSION trifecta_ui && \
+RUN wget $TRIFECTA_URL/trifecta-ui-$TRIFECTA_VERSION.zip && \
+	unzip trifecta-ui-$TRIFECTA_VERSION.zip  && \
+	rm trifecta-ui-$TRIFECTA_VERSION.zip && \
+	ln -s trifecta-ui-$TRIFECTA_VERSION trifecta-ui && \
 	mkdir /home/trifecta/.trifecta
 
 COPY entrypoint.sh /home/trifecta/
