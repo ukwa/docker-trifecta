@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Jan Schulte <jan@janschulte.com>
 
-ENV TRIFECTA_VERSION=0.22.0rc8b-0.10.1.0 TRIFECTA_URL=https://github.com/ldaniels528/trifecta/releases/download/v0.22.0rc8-0.10.1.0/
+ENV TRIFECTA_VERSION=0.22.0rc8b-0.10.1.0 TRIFECTA_URL=https://github.com/ldaniels528/trifecta/releases/download/v0.22.0rc8-0.10.1.0
 
 RUN useradd -r -m trifecta
 
